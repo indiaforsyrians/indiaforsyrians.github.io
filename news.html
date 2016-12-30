@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+     <title>INDIA FOR SYRIANS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+           
+             ul {
+                list-style-type: none;
+                 margin: 0; 
+                 padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            li {
+                float: left;          
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111;
+            }
+            
+            .txt{
+                width:100%;
+                float:left;
+                font-family: cursive;
+                position: relative;
+                top:180px;
+               
+                color: wheat;
+                font-size: 30px;
+            }
+            body{
+                background-image: url(bg2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center center;
+                background-color: white;
+            }
+            header{
+                color: crimson;
+                width: 100%;
+                position: fixed;
+                top:0px;
+                text-align: center;
+                background-color: black;
+            }
+            .mySlides {
+        display:none;
+         z-index: 1;
+ }
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    z-index: 1;
+    width: 750px;
+    height: 200px;
+    top:150px;
+    }
+    
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-naion-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+            
+            .vdo{
+              
+                top:120px;
+                position: relative;
+            }
+    </style>
+    <body>
+        <header>
+            <div>
+                <h1><img src="help1.jpg" alt="helping hands" style="width:50px; height:50px;"> India For Syrians</h1>
+            </div>
+            <ul>
+                <li><a href="index.html" target="_self">HOME</a></li>
+                <li><a href="news.html" target="_self">NEWS</a></li>
+                <li><a href="pers.html" target="_self">PERSPECTIVE</a></li>
+                <li><a href="members.html" target="_self">MEMBERS</a></li>
+            </ul>
+            
+        </header>
+        <div class="w3-container w3-third">
+            <h1 class="txt"><a href="https://www.theguardian.com/world/2016/mar/14/syria-civil-war-five-years-guardian-reporting" target="_blank">1) Syria's civil war: five years of Guardian reporting</a></h1>
+            <h1 class="txt"><a href="http://www.bbc.com/news/world-middle-east-38449551" target="_blank">2) Syria conflict: Turkey and Russia 'agree ceasefire plan'</a></h1>
+            <h1 class="txt"><a href="http://www.aljazeera.com/topics/city/aleppo.html" target="_blank">3) Battle for Aleppo</a></h1>
+            <h1 class="txt"><a href="https://en.wikipedia.org/wiki/Syrian_Civil_War
+" target="_blank">4) About the war</a></h1>
+            
+           
+        </div>
+        
+        
+        <div class="w3-container w3-third">
+            
+                <div class="txt">
+                    <img src="omran%201.jpg" alt="omran" width="400px" height="500px">
+                </div>
+
+        </div>
+        <div class="w3-container w3-third">
+            <video class="vdo" width="420" height="240" controls>
+                <source src="Cristiano%20Ronaldo's%20Message%20to%20the%20Children%20of%20Islam%20-%20Syria.mp4" type="video/mp4">
+            </video>
+                    <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                
+                    <img src="images (1).jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                
+                <img src="images (2).jpg" style="width:50%">
+            </div>
+                        
+            <div class="mySlides fade">
+                
+                <img src="images%20(3).jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides fade">
+               
+                <img src="download (1).jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides fade">
+               
+                <img src="download.jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides fade">
+               
+                <img src="images.jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides fade">
+               
+                <img src="omran%201.jpg" style="width:50%">
+            </div>
+        </div>
+       
+        
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+   
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 1000); // Change image every 1 seconds
+}
+</script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>INDIA FOR SYRIANS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {
+        display:none;
+         z-index: 1;
+ }
+
+/* Slideshow container */
+.slideshow-container {
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 150px;
+    top:400px;
+    left:1020px;
+}
+    
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-naion-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+        
+        .img1{
+             min-height: 100%;
+            min-width: 1024px;
+            
+            opacity:0.5;
+            filter: alpha(opacity=50);
+            
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        h1{
+            position: absolute;
+            top:80px;
+            left: 600px;
+            text-align: center;
+            color: black;
+        }
+        p{
+            position: absolute;
+            top:200px;
+            left: 500px;
+            text-align: center;
+            color: black;
+            font-size: 50px;
+        }
+</style>
+    
+    <body >
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <a class="navbar-brand" href="#">INDIA FOR SYRIANS</a>
+                </div>
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Page 4</a></li>
+                <li><a href="#">Page 5</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+            
+            <img class="img1" src="160303085722-restricted-02-migrant-crisis-0303-super-169.jpg" alt="image" >
+            <h1>VISION</h1>
+            <p>jflkshdkfl<br>asfasfasfas<br></p>
+        <div class="box"><h2 style="text-align:center; color:white; font-family:Tangerine; font-size:48px;" >NEWS</h2>
+            <ul>
+                <li style="color:white; font-family:Tangerine; font-size:25px;">NEWS1</li>
+                <li style="color:white; font-family:Tangerine; font-size:30px;">NEWS2</li>
+                <li style="color:white; font-family:Tangerine; font-size:30px;">NEWS3</li>
+            </ul>
+             </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                
+                    <img src="images (1).jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides fade">
+                
+                <img src="images (2).jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides fade">
+               
+                <img src="download (1).jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides fade">
+               
+                <img src="images.jpg" style="width:50%">
+            </div>
+            
+            <div class="mySlides fade">
+               
+                <img src="omran%201.jpg" style="width:50%">
+            </div>
+        </div>
+       
+        
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+   
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+    </body>
+</html>
